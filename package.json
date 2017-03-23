@@ -1,0 +1,22 @@
+{
+  "name": "utils-dir",
+  "version": "0.0.1",
+  "description": "folder utils written in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alice-em/utils-dir.git"
+  },
+  "author": "Alice Maldonado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alice-em/utils-dir/issues"
+  },
+  "homepage": "https://github.com/alice-em/utils-dir#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
