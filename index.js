@@ -8,7 +8,7 @@ const path = require('path');
 let analysis, count, folder, relative;
 
 count = 0;
-folder = 'path';
+folder = '/media/alicemod/Apollo/Comic Database';
 relative = '/'
 
 analysis = (folder, count, relative) => {
