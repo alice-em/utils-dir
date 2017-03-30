@@ -1,5 +1,5 @@
 // utils-dir
-// For pulling up information on folders and file numbers
+// For pulling up information on folders and file numbers and totals
 
 const color = require('colors');
 const fs = require('fs');
@@ -8,7 +8,7 @@ const path = require('path');
 let analysis, count, folder, relative;
 
 count = 0;
-folder = '/media/alicemod/Apollo/Comic Database';
+folder = 'Path/To/Folder';
 relative = '/'
 
 analysis = (folder, count, relative) => {
@@ -17,6 +17,7 @@ analysis = (folder, count, relative) => {
     if (fs.statSync(path.join(folder, files[i])).isFile()) {
       count++;
     } else if (fs.statSync(path.join(folder, files[i])).isDirectory()) {
+      count++;
       let newCount = 0;
       let newFolder = path.join(folder, files[i]);
       let newRelative = path.join(relative, files[i]);
